@@ -94,7 +94,7 @@ func CreateAccount(chainID ids.ID, cli *rpc.JSONRPCClient, tcli *trpc.JSONRPCCli
 		factory,
 	)
 	if err != nil {
-		fmt.Errorf("It failed", err)
+		fmt.Errorf("It failed: %w", err)
 		return nil, err
 	}
 
